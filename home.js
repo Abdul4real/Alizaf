@@ -73,7 +73,7 @@ accordionData.forEach((data, index) => {
   <h5>${data.title}</h5>
   <h3 class="toggle-sign">&#43;</h3>
 </div>
-<p class="accordion-content">
+<p class="accordion-content"> <br>
  ${data.description}
 </p>
   `;
@@ -141,6 +141,7 @@ const imagesTitleData = [
     img: "./cards/Image 12.png",
     title: "Access to Additional Services",
     description: "Option to access additional specialized services such as physical therapy, specialized nursing care",
+    page : "/Service/"
   },
 ];
 
@@ -154,6 +155,7 @@ imagesTitleData.forEach((data, index) => {
     <div class="text-content">
       <h2>${data.title}</h2>
       <p>${data.description}</p>
+      <a href="${data.page}" class="btn">Learn More</a>
     </div>
   `;
 
